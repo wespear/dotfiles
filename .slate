@@ -1,0 +1,16 @@
+config defaultToCurrentScreen true
+config nudgePercentOf screenSize
+config resizePercentOf screenSize
+
+# Push windows around
+bind left:ctrl chain push left bar-resize:screenSizeX/2 | push left bar-resize:screenSizeX/3 | push left bar-resize:screenSizeX/1.5
+bind right:ctrl chain push right bar-resize:screenSizeX/2 | push right bar-resize:screenSizeX/3 | push right bar-resize:screenSizeX/1.5
+
+# Focus Bindings
+bind right:cmd    focus right
+bind left:cmd     focus left
+bind up:cmd       focus up
+bind down:cmd     focus down
+
+# Window Hints
+bind esc:cmd hint
